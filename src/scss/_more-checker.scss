@@ -1,0 +1,120 @@
+.more-button {
+  cursor: pointer;
+  width: 133px;
+  display: inline-block;
+
+  &_technic,
+  &_brands {
+    display: none;
+    @media (min-width: 768px) {
+      display: inline-block;
+    }
+  }
+}
+
+.more-checker {
+  opacity: 0;
+  position: absolute;
+}
+
+.more-checker_text ~ .more-button_text::after {
+  content: "Читать далее";
+  color: #1b1c21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  display: inline-block;
+  position: absolute;
+
+}
+
+.more-checker_text:checked ~ .more-button_text::after {
+  content: "Скрыть";
+}
+
+.more-checker_text ~ .more-button_text::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(/images/svg/more-two.svg);
+}
+
+.more-checker_text:checked ~ .more-button_text::before {
+  background-image: url(/images/svg/less.svg);
+}
+
+.more-checker:checked ~ .information__text {
+  max-height: none;
+}
+
+.more-checker_brands ~ .more-button_brands::after {
+  content: "Читать далее";
+  color: #1b1c21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  display: inline-block;
+  position: absolute;
+  
+}
+
+.more-checker_brands:checked ~ .more-button_brands::after {
+  content: "Скрыть";
+}
+
+.more-checker_brands ~ .more-button_brands::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(/images/svg/more-two.svg);
+}
+
+.more-checker_brands:checked ~ .more-button_brands::before {
+  background-image: url(/images/svg/less.svg);
+}
+
+.more-checker_brands:checked ~ .brands-container {
+  height: auto;
+}
+
+.more-checker_technic ~ .more-button_technic::after {
+  content: "Читать далее";
+  color: #1b1c21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  display: inline-block;
+  position: absolute;
+
+}
+
+.more-checker_technic:checked ~ .more-button_technic::after {
+  content: "Скрыть";
+}
+
+.more-checker_technic ~ .more-button_technic::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(/images/svg/more-two.svg);
+}
+
+.more-checker_technic:checked ~ .more-button_technic::before {
+  background-image: url(/images/svg/less.svg);
+}
+
+.more-checker_technic:checked ~ .technic-container {
+  height: auto;
+}

@@ -1,0 +1,55 @@
+.swiper2 {
+  background-color: #f8f8f8;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 16px;
+
+  @media (min-width: 768px) {
+    padding: 24px 24px 32px 24px;
+  }
+  @media (min-width: 1426px) {
+    padding: 24px 32px 50px 32px;
+  }
+
+  .technic-container {
+    padding: 16px 0 24px 16px;
+
+    @media (min-width: 768px) {
+      padding: 0 0 24px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 24px;
+      height: 150px;
+      overflow: hidden;
+    }
+    @media (min-width: 1426px) {
+      max-width: 1120px;
+      gap: 16px 32px;
+    }
+
+    .technic-button {
+      height: 160px;
+      padding: 16px;
+      min-width: 240px;
+      border-radius: 6px;
+      border: 1px solid #eaeaea;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin: 0;
+      .arrow {
+        justify-self: end;
+        align-self: flex-end;
+      }
+
+      @media (min-width: 768px) {
+        min-width: 224px;
+      }
+
+      @media (min-width: 1426px) {
+        width: 240px;
+      }
+    }
+  }
+}

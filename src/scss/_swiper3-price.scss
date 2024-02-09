@@ -1,0 +1,202 @@
+.main__price {
+  background-color: #f8f8f8;
+
+  .swiper3 {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 26px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    .price-container {
+      padding: 16px 0 16px 8px;
+      display: flex;
+      height: auto;
+
+      .price-button {
+        background: #ffffff;
+        min-width: 260px;
+        height: 200px;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+        padding: 16px;
+        position: relative;
+
+        &__item {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          align-items: start;
+          flex-wrap: wrap;
+
+          .item__tittle {
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #7e7e82;
+          }
+          .item__text {
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.20000000298023224px;
+            text-align: left;
+            color: #1b1c21;
+          }
+        }
+        &__btn {
+          width: 119px;
+          height: 32px;
+          background: #ff3e79;
+          border-radius: 16px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          justify-content: space-between;
+          padding: 4px 16px;
+
+          position: absolute;
+          bottom: 16px;
+          right: 16px;
+
+          .btn__text {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 200% */
+            letter-spacing: -0.15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.price__section {
+  width: 100%;
+  
+  @media (min-width: 768px) {
+    padding: 31px 24px 24px 24px;
+    display: table;
+  }
+  .price-table {
+    display: none;
+    width: 100%;
+    border-collapse: collapse;
+
+    @media (min-width: 768px) {
+      display: table;
+    }
+    td {
+      &:first-child {
+        padding-left: 16px;
+      }
+      &:nth-child(2) {
+        padding-left: 24px;
+      }
+      &:nth-child(3) {
+        padding-left: 22px;
+      }
+      &:last-child {
+        padding-left: 20px;
+      }
+    }
+
+    &__head {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #7e7e82;
+      td {
+        padding-bottom: 16px;
+      }
+    }
+    &__body {
+      background-color: #ffffff;
+      td {
+        padding: 16px;
+      }
+      tr {
+        border-bottom: 1px solid #eaeaea;
+        &:first-child {
+          td {
+            &:first-child {
+              border-top-left-radius: 6px;
+            }
+            &:last-child {
+              border-top-right-radius: 6px;
+            }
+          }
+        }
+
+        &:last-child {
+          border-bottom: 0;
+          td {
+            &:last-child {
+              border-bottom-right-radius: 6px;
+            }
+            &:first-child {
+              border-bottom-left-radius: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.price__info{
+padding: 0 16px 40px 16px;
+display: flex;
+flex-direction: column;
+align-items: start;
+@media(min-width:768px){
+  padding: 0 24px 47px 24px;
+  gap: 16px;
+}
+  .info__text{
+    color: #1b1c21;
+    font-family: "TT Lakes";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    max-width: 421px;
+ 
+  }
+
+  
+  
+  
+  .info-button__price-btn {
+    color: #1b1c21;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: start;
+  position: relative;
+    
+
+    &::after{
+      content: url(/images/svg/more-red.svg);
+      position: absolute;
+      width: 24px;
+height: 24px;
+
+
+    }
+  
+}
+
+}

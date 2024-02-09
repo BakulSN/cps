@@ -1,0 +1,40 @@
+@import "mixins";
+@import "fonts";
+@import "vendor";
+@import "vars";
+@import "settings";
+
+@import "normalize";
+
+@import "aside-menu";
+
+@import "modal-buttons";
+
+@import "container";
+
+@import "header";
+
+@import "section-main";
+
+@import "more-checker";
+
+@import "swiper-brands";
+
+@import "swiper2-technic";
+
+@import "swiper3-price";
+
+@import "footer";
+
+
+.header {
+  text-align: center;
+  & img {
+    width: 30%;
+  }
+}
+
+.welcome-title {
+  margin-top: 50px;
+  font-size: 6em;
+}

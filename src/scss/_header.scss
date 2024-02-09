@@ -1,0 +1,44 @@
+.divider {
+  width: 2px;
+  height: 32px;
+  border-radius: 1px;
+  background: #eaeaea;
+}
+
+.main__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 16px;
+  box-shadow: inset 0 -1px 0 0 #d9fff5;
+  gap: 16px;
+
+  @media (min-width: 1426px) {
+    display: none;
+  }
+
+  .header__elements {
+    display: flex;
+    align-items: center;
+    gap: 16.7px;
+
+    @media (min-width: 768px) {
+      gap: 20px;
+    }
+
+    .header__button {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+  }
+  .divider_first {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+}
