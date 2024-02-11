@@ -18,3 +18,22 @@ body {
 .lock {
   overflow: hidden;
 }
+
+button {
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    box-shadow: 5px 5px 5px #ff3e79;
+    opacity: 0.7;
+    // border-radius: 40%;
+  }
+}
+
+a,
+label {
+  &:hover,
+  &:focus {
+    box-shadow: 10px 10px 10px #b8ffec;
+    opacity: 0.7;
+  }
+}
